@@ -31,7 +31,11 @@ void read_data(string file_name) {
 				getline(line_stream, student.last, ',');
 				getline(line_stream, student.first, ',');
 
-				student_data.push_back(student);
+				student_data.push_back(student); 
+
+#ifdef _DEBUG
+				std::cout << student.last << ',' << student.first << std::endl;
+#endif // DEBUG
 			}
 		}
 	}
